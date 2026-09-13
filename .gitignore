@@ -1,0 +1,23 @@
+## .NET build artifacts
+bin/
+obj/
+out/
+
+## SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+## Visual Studio
+.vs/
+
+## IDE
+.vscode/
+.idea/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Evidencias de entrega (local)
+Evidencias/

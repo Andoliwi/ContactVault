@@ -1,0 +1,12 @@
+services:
+  contactvault-api:
+    build: .
+    container_name: contactvault-api
+    ports:
+      - "8080:8080"
+    volumes:
+      - contactvault-data:/app
+    restart: unless-stopped
+
+volumes:
+  contactvault-data:

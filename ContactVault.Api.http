@@ -1,0 +1,52 @@
+@ContactVault.Api_HostAddress = http://localhost:5126
+
+GET {{ContactVault.Api_HostAddress}}/
+Accept: text/html
+
+###
+
+GET {{ContactVault.Api_HostAddress}}/api/contacts
+Accept: application/json
+
+###
+
+GET {{ContactVault.Api_HostAddress}}/api/contacts?search=perez
+Accept: application/json
+
+###
+
+GET {{ContactVault.Api_HostAddress}}/api/contacts/1
+Accept: application/json
+
+###
+
+POST {{ContactVault.Api_HostAddress}}/api/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Juan",
+  "lastName": "Pérez",
+  "phone": "+34 600 111 222",
+  "email": "juan.perez@correo.com",
+  "company": "Acme"
+}
+
+###
+
+PUT {{ContactVault.Api_HostAddress}}/api/contacts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Juan",
+  "lastName": "Pérez",
+  "phone": "+34 600 999 888",
+  "email": "juan.perez@correo.com",
+  "company": "Acme S.L."
+}
+
+###
+
+DELETE {{ContactVault.Api_HostAddress}}/api/contacts/1
+
+###

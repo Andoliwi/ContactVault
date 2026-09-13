@@ -1,0 +1,13 @@
+**/bin
+**/obj
+**/out
+*.db
+*.db-shm
+*.db-wal
+.git
+.gitignore
+.vscode
+.idea
+README.md
+Dockerfile
+.dockerignore
